@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mugilarasu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Interactive Background Canvas -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-progress"></div>
+
+    <header id="sidebar">
+        <nav class="navbar">
+            <div class="nav-container">
+                <!-- <a href="#" class="logo reveal-down">P</a> -->
+                <ul class="nav-links">
+                    <li class="reveal-down" style="transition-delay: 0.1s;">
+                        <a href="#home" title="Home">
+                            <i class="fas fa-house"></i>
+                        </a>
+                    </li>
+                    <li class="reveal-down" style="transition-delay: 0.2s;">
+                        <a href="#about" title="About">
+                            <i class="fas fa-user"></i>
+                        </a>
+                    </li>
+                    <li class="reveal-down" style="transition-delay: 0.3s;">
+                        <a href="#skills" title="Skills">
+                            <i class="fas fa-code"></i>
+                        </a>
+                    </li>
+                    <li class="reveal-down" style="transition-delay: 0.4s;">
+                        <a href="#projects" title="Projects">
+                            <i class="fas fa-briefcase"></i>
+                        </a>
+                    </li>
+                    <li class="reveal-down" style="transition-delay: 0.5s;">
+                        <a href="#contact" title="Contact">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="sidebar-footer">
+                <div class="theme-switch reveal-down" style="transition-delay: 0.6s;" id="theme-toggle"
+                    title="Toggle Theme">
+                    <i class="fas fa-moon"></i>
+                </div>
+            </div>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container hero-container">
+            <div class="hero-text">
+                <h1 class="reveal-left" style="transition-delay: 0.7s;">Hi, I'm <span class="highlight">Mugilarasu
+                        G</span></h1>
+                <h3 class="reveal-left" style="transition-delay: 0.8s;">Full Stack Developer</h3>
+                <p class="reveal-left" style="transition-delay: 0.9s;">I build interactive and responsive web
+                    applications.</p>
+                <div class="reveal-left" style="transition-delay: 1s;">
+                    <a href="#projects" class="btn">View My Work</a>
+                </div>
+            </div>
+            <div class="hero-img zoom-in" style="transition-delay: 1.1s;">
+                <img src="avatar.png" alt="Mugilarasu G - 3D Avatar" class="avatar-3d">
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section reveal">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I am a passionate about Programming as well as a webdeveloper with a strong foundation in
+                        building clean and scalable web
+                        applications. I love solving problems and turning ideas into reality through code. When I'm not
+                        coding, I enjoy learning new technologies and keeping up with industry trends.</p>
+                    <a href="Mugil_Resume.pdf" target="_blank" class="btn">Download Resume</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section reveal">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fab fa-java"></i>
+                    <h3>Java</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-database"></i>
+                    <h3>SQL</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-python"></i>
+                    <h3>Python</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-html5"></i>
+                    <h3>HTML5</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-css3-alt"></i>
+                    <h3>CSS3</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-js"></i>
+                    <h3>JavaScript</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-react"></i>
+                    <h3>React</h3>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section reveal">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="finance_ai.png" alt="Finance AI project preview">
+                    </div>
+                    <div class="project-info">
+                        <h3>AI Personal Finance Assistant</h3>
+                        <p>Full-stack app for tracking expenses with AI insights, OCR receipt extraction, and a
+                            Gemini-powered chatbot.</p>
+                        <p><small>Next.js, FastAPI, MongoDB, Gemini AI</small></p>
+                        <div class="project-links">
+                            <a href="https://github.com/G-Mugilarasu/AI-powered-personal-finance-assistant"
+                                target="_blank" class="btn-small">Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="library_system.png" alt="Library System project preview">
+                    </div>
+                    <div class="project-info">
+                        <h3>Library Management System</h3>
+                        <p>A full-stack book management platform with real-time stock tracking and role-based access
+                            control.</p>
+                        <p><small>Spring Boot, React, Java, JavaScript</small></p>
+                        <div class="project-links">
+                            <a href="https://github.com/G-Mugilarasu/Library-Management" target="_blank"
+                                class="btn-small">Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="ipl_prediction.png" alt="IPL Prediction project preview">
+                    </div>
+                    <div class="project-info">
+                        <h3>IPL Score Prediction</h3>
+                        <p>A machine learning tool designed to predict match scores using Neural Networks and Random
+                            Forest algorithms.</p>
+                        <p><small>Python, ML (Keras, SVM), CLI</small></p>
+                        <div class="project-links">
+                            <a href="https://github.com/G-Mugilarasu/Ipl_score_predection" target="_blank"
+                                class="btn-small">Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="subtitle_generator.png" alt="Subtitle Generator project preview">
+                    </div>
+                    <div class="project-info">
+                        <h3>Multilanguage Subtitle Generator</h3>
+                        <p>A Flask web app that transcribes and translates audio/video files into English subtitles
+                            using OpenAI Whisper and Google Translate.</p>
+                        <p><small>Python, Flask, OpenAI Whisper, Translate API</small></p>
+                        <div class="project-links">
+                            <a href="https://github.com/G-Mugilarasu/Multilanguage_Automatic_subtitle_generator"
+                                target="_blank" class="btn-small">Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section reveal">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="contact-content">
+                <p>Feel free to reach out for collaborations or just a friendly hello!</p>
+                <div class="social-links">
+                    <a href="https://github.com/G-Mugilarasu"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/mugilarasu-g-973867258/"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="mailto:gmugilarasu@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <textarea placeholder="Message" rows="5" required></textarea>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Mugilarasu G. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
