@@ -588,10 +588,7 @@ footer {
     }
 
     .nav-container {
-        display: flex; /* Ensure it's visible to show .nav-links */
-        flex-direction: column;
-        align-items: center;
-        width: auto;
+        display: contents; /* Allows children to be direct flex items of .navbar */
     }
 
     .logo {
@@ -599,7 +596,7 @@ footer {
     }
 
     .nav-links {
-        position: absolute;
+        position: fixed;
         right: 0px;
         height: calc(100vh - 70px);
         top: 70px;
