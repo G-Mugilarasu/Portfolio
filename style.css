@@ -588,7 +588,10 @@ footer {
     }
 
     .nav-container {
-        display: none; /* Hide logo/nav-container on mobile top bar */
+        display: flex; /* Ensure it's visible to show .nav-links */
+        flex-direction: column;
+        align-items: center;
+        width: auto;
     }
 
     .logo {
@@ -639,6 +642,30 @@ footer {
 
     .nav-active {
         transform: translateX(0%);
+    }
+
+    .toggle .line1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .toggle .line2 {
+        opacity: 0;
+    }
+
+    .toggle .line3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+    @keyframes navLinkFade {
+        from {
+            opacity: 0;
+            transform: translateX(50px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateX(0px);
+        }
     }
 
     .hero {
